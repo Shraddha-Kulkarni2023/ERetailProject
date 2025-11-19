@@ -41,6 +41,7 @@ public class OrderService {
             ));
 
             OutboxEvent event = new OutboxEvent();
+            event.setAggregateId(order.getId().toString());
             event.setAggregateType("Order");
             event.setAggregateType(savedOrder.getId().toString());
             event.setType("OrderCreated");

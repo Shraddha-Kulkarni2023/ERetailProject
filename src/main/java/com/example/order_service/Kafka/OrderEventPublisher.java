@@ -17,9 +17,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class OrderEventPublisher {
 
-    private final OrderRepository orderRepository;
-    private final OutboxRepository outboxRepository;
-    private final KafkaTemplate<String,String> kafkaTemplate;
+    private OrderRepository orderRepository;
+    private OutboxRepository outboxRepository;
+    private KafkaTemplate<String,String> kafkaTemplate;
 
     @Scheduled(fixedDelay = 1000)
     @Transactional
