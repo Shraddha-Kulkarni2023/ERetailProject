@@ -1,0 +1,25 @@
+# Java & IntelliJ
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# IntelliJ
+.idea/
+*.iml
+out/
+target/
+
+# Maven
+.mvn/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
